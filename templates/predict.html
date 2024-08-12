@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <style>
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h1 {
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prediction Result</h1>
+    <p>Predicted Name: {{ data }}</p>
+    <p>연락처: {{ phone_number }}</p>
+    <br>
+    <a href="/">Upload another image</a>
+  </div>
+</body>
+</html>
